@@ -1,0 +1,60 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.background{
+    height: 350px;
+}
+.background::before{
+    content: "";
+    background-image: url(images/back1.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 50%;
+    height: 350px;
+    width: 100%;
+    z-index: -1;
+}
+.bg_border{
+    background-color: darkgray;
+    border-radius: 10px;
+}
+.our_client{
+    position: relative;
+}
+.our_client::before{
+    content: "";
+    background-image: url(images/back2.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 50%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.contact{
+    position: relative;
+}
+@media (min-width:282px) and (max-width:386px)
+{
+    .background{
+        height: 450px;
+    }
+    .background::before{
+        height: 450px;
+    }
+
+}
+@media screen and (max-width:282px)
+{
+    .background{
+        height: 550px;
+    }
+    .background::before{
+        height: 550px;
+    }
+
+}
